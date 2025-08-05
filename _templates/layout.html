@@ -1,20 +1,8 @@
 {% extends "!layout.html" %}
 
-{% block extrahead %}
-  {{ super() }}
-  <style>
-    .custom-banner {
-      background-color: #fdf6e3;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-      text-align: center;
-    }
-  </style>
-{% endblock %}
-
-{% block document %}
-  <div class="custom-banner">
-    🚀 This banner is injected directly into the HTML body!
+{% block content %}
+  <div style="background: #ffffcc; padding: 1em; text-align: center;">
+    🚀 This is custom HTML injected into the body of every page.
   </div>
   {{ super() }}
 {% endblock %}
