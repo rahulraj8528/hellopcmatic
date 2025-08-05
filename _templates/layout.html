@@ -1,8 +1,8 @@
 {% extends "!layout.html" %}
 
-{% block content %}
-  <div style="background: #ffffcc; padding: 1em; text-align: center;">
-    🚀 This is custom HTML injected into the body of every page.
-  </div>
+{% block body %}
   {{ super() }}
+  <div style="position: fixed; bottom: 0; width: 100%; background: #fffae6; text-align: center; padding: 10px; border-top: 1px solid #ccc; z-index: 1000;">
+    ✅ Custom HTML injected directly into the <body> via layout.html
+  </div>
 {% endblock %}
