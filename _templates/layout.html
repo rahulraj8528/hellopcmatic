@@ -1,0 +1,13 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <meta name="msvalidate.01" content="C49E36B78750F57FF10DE13279028CBC" />
+
+{% endblock %}
+
+{% block body %}
+  <p>This is injected into the body.</p>
+  {{ super() }}
+{% endblock %}
+
