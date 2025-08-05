@@ -2,12 +2,19 @@
 
 {% block extrahead %}
   {{ super() }}
-  <meta name="msvalidate.01" content="C49E36B78750F57FF10DE13279028CBC" />
-
+  <style>
+    .custom-banner {
+      background-color: #fdf6e3;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+  </style>
 {% endblock %}
 
-{% block body %}
-  <p>This is injected into the body.</p>
+{% block document %}
+  <div class="custom-banner">
+    🚀 This banner is injected directly into the HTML body!
+  </div>
   {{ super() }}
 {% endblock %}
-
